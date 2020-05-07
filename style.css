@@ -1,0 +1,370 @@
+body {
+    /* background:  url(img/template.png) top / cover, no-repeat; */
+    font-family: "Montserrat", serif;
+    color: #fff;
+}
+
+h1, h2, h3, h4 {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    transition: .3s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+}
+
+.template {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* opacity: 0.6; */
+}
+
+/* ****************************************************navbar******************************************************* */
+
+.navbar {
+    justify-content: space-between;
+    padding: 2rem 4rem 0.5rem 1rem;
+}
+
+.navbar-bro {
+    font-size: 2rem;
+    margin: 1.6% 30% 0 14.5%;
+}
+
+@media screen and (max-width: 1300px) {
+    .navbar-bro {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-bro {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-bro {
+        margin-right: 5%;
+    }
+}
+
+.navbar-collapse {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 0%;
+    margin-top: 2%;
+    flex-wrap: nowrap;
+}
+
+.navbar-nav {
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-nav {
+        flex-direction: column;
+        margin-left: 15%;
+    }
+}
+
+.nav-item {
+    white-space: nowrap;
+    padding: 0 2.3% 1% 2.3%;
+}
+
+.navbar-nav a {
+    padding-right: 0;
+}
+
+.navbar-toggler {
+    color: #fff;
+    margin-top: 5%;
+}
+
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color:#fff;
+}
+/* *************************************************customisation du navbar-toggler********************************************* */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    
+}
+  
+.custom-toggler .navbar-toggler {
+    border-color: rgb(255, 255, 255);
+    
+}
+
+/* **********************************************fin customisation du navbar-toggler********************************************* */
+
+
+@media screen and (max-width: 545px) {
+    .navbar-toggler {
+        margin-left: 15%;
+        /* margin-top: 5%; */
+    }
+}
+
+/* ***************************************************************header********************************************************* */
+
+.header {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url(img/Header_img.jpg) center center / cover no-repeat;
+    /* height: 1130px; */
+    height: 900px;
+}
+
+.main-title {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(14%);
+    font-weight: 300;
+    font-size: 4.7em;
+}
+
+.description {
+    /* background-color: #ccc; */
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-48%) translateY(30%);
+    max-width: 860px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+@media screen and (max-width: 1069px) {
+    .main-title {
+        font-size: 4em;
+    }
+    .description {
+        max-width: 600px;
+        font-size: 1rem;
+    }
+    .header {
+        height: 700px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .main-title {
+        font-size: 3.5em;
+    }
+    .description {
+        max-width: 500px;
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main-title {
+        font-size: 3em;
+    }
+    .description {
+        max-width: 500px;
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main-title {
+        font-size: 2.5em;
+    }
+    .description {
+        max-width: 500px;
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 460px) {
+    .main-title {
+        font-size: 2em;
+    }
+    .description {
+        max-width: 500px;
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 370px) {
+    .main-title {
+        font-size: 1.5em;
+    }
+    .description {
+        max-width: 500px;
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    .main-title {
+        font-size: 1em;
+    }
+    .description {
+        max-width: 500px;
+        font-size: .8rem;
+    }
+}
+
+
+/* ************************************************************************section our story******************************************************** */
+
+.story {
+    background-color: #962323;
+}
+
+
+
+.img_wrapper {
+    display: block;
+    margin: 140px auto;
+    width: 58%;
+}
+
+.story_img {
+    width: 100%;
+    height: auto;
+}
+
+.our_story {
+    max-width: 600px;
+    margin: 190px auto;
+    padding: 0 10px;
+}
+
+.our_story h3 {
+    font-family: "Engagement", serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.our_story h3::after {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    width: 130px;
+    content: "";
+    margin:18px auto 45px;
+}
+
+.our_story p {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.8em;
+    padding-top: 5px;
+}
+
+/* **************************************************signatures recipes********************************************* */
+
+/* background-color: #6A233E; */
+
+.signature {
+    padding-top: 127px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/signature.jpg) center center / cover no-repeat;
+    padding-bottom: 100px;    
+}
+
+.signature-recipes {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: ;
+}
+
+.signature-recipes h3 {
+    font-family: "Engagement", serif;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 200;
+    word-spacing: 8px;
+}
+
+.signature-recipes h3::after {
+    display: block;
+    height: 2px;
+    background-color: rgb(133, 62, 89);
+    width: 130px;
+    content: "";
+    margin:18px auto 45px;
+}
+
+.signature-recipes p {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.8em;
+    padding-top: 10px;
+}
+
+/* **************************************************signatures recipes********************************************* */
+
+.menu {
+    padding-top: 142px;
+}
+
+.menu .row-meal {
+    padding: 40px 75px;
+}
+
+.menu .row-meal:first-child {
+    padding: 92px 75px;
+}
+
+
+
+.col-md-5 {
+    max-width: 575px;
+}
+
+.menu h3,.menu h4, .menu p {
+    color: #000;
+    /* white-space: nowrap; */
+}
+
+.menu h4, .price h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.price h4 {
+    color: rgb(177, 101, 130);
+    padding-bottom: 15px;
+    transform: translateX(-45%);
+}
+
+.meal_wrapper {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #ccc; */
+    margin-top: 93px;
+    margin: auto;
+    /* max-width: 400px; */
+}
+
+.col-md-1 {
+    /* background-color: #ccc; */
+}
+
+@media screen and (max-width: 767px) {
+
+    .menu .row-meal {
+        padding: 0px 75px;
+    }
+    .menu .row-meal:first-child {
+        padding: 10px 75px;
+    }
+    .price h4 {
+        padding-left: 20px;
+        float: right;
+    }
+}
